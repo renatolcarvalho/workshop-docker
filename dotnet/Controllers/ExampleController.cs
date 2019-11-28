@@ -9,7 +9,8 @@ namespace dotnet.Controllers
         [HttpGet]
         public string[] Get()
         {
-            return new string[] { "Hello World" };
+            var stageEnviroment = System.Environment.GetEnvironmentVariable("ENV_STAGE");
+            return new string[] { string.Concat("Hi! ", stageEnviroment, " is your stage! : )") };
         }
     }
 }
