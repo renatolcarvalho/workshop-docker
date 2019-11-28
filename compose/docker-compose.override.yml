@@ -7,10 +7,9 @@ services:
     ports:
       - "9091:80"
   
-  sql.database:
+  mysql.database:
     environment:
-      - SA_PASSWORD=123Aa321
-      - ACCEPT_EULA=Y
+      - MYSQL_ROOT_PASSWORD=123Aa321      
     ports:
-      - "1401:1433"
+      - "3306:3306"
 

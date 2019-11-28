@@ -13,9 +13,9 @@ services:
     networks:
       - dockersql-network
     depends_on:
-      - sql.database
+      - mysql.database
 
-  sql.database:
-    image: microsoft/mssql-server-linux:2017-latest
+  mysql.database:
+    image: mysql
     networks:
       - dockersql-network

@@ -234,17 +234,9 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[3.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[3.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.0.1, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [

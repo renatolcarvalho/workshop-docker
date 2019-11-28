@@ -1,0 +1,51 @@
+networks:
+  dockersql-network:
+    driver: bridge
+services:
+  dockersql.application.webapi:
+    build:
+      context: C:\Projects\workshop-docker\compose
+      dockerfile: Example.WebApi/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: Example.WebApi
+      target: base
+    depends_on:
+    - mysql.database
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: dockersql.application.webapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "bin/Debug/netcoreapp3.0/Example.WebApi.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      dockersql-network: {}
+    ports:
+    - published: 9091
+      target: 80
+    tty: true
+    volumes:
+    - C:\Projects\workshop-docker\compose\Example.WebApi:/app:rw
+    - C:\Users\renato.carvalho\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\renato.carvalho\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\renato.carvalho\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\renato.carvalho\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Projects\workshop-docker\compose:/src:rw
+  mysql.database:
+    environment:
+      MYSQL_ROOT_PASSWORD: 123Aa321
+    image: mysql
+    networks:
+      dockersql-network: {}
+    ports:
+    - published: 3306
+      target: 3306
+version: '3.6'

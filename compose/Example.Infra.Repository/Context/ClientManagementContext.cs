@@ -16,7 +16,7 @@ namespace Example.Infra.Repository.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_connectionString);
+            optionsBuilder.UseMySql(_connectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

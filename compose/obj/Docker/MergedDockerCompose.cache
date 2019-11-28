@@ -7,7 +7,7 @@ services:
       context: C:\Projects\workshop-docker\compose
       dockerfile: Example.WebApi/Dockerfile
     depends_on:
-    - sql.database
+    - mysql.database
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     image: dockersql.application.webapi
@@ -16,14 +16,13 @@ services:
     ports:
     - published: 9091
       target: 80
-  sql.database:
+  mysql.database:
     environment:
-      ACCEPT_EULA: "Y"
-      SA_PASSWORD: 123Aa321
-    image: microsoft/mssql-server-linux:2017-latest
+      MYSQL_ROOT_PASSWORD: 123Aa321
+    image: mysql
     networks:
       dockersql-network: {}
     ports:
-    - published: 1401
-      target: 1433
+    - published: 3306
+      target: 3306
 version: '3.6'

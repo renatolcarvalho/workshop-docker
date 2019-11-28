@@ -6,6 +6,9 @@ C:\Projects\workshop-docker\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.In
 C:\Projects\workshop-docker\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.AssemblyInfo.cs
 C:\Projects\workshop-docker\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.dll
 C:\Projects\workshop-docker\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.pdb
+C:\Projects\workshop-docker\compose\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.csprojAssemblyReference.cache
+C:\Projects\workshop-docker\compose\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.AssemblyInfoInputs.cache
+C:\Projects\workshop-docker\compose\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.AssemblyInfo.cs
 C:\Projects\workshop-docker\compose\Example.Infra.IoC\bin\Debug\netcoreapp3.0\Example.Infra.IoC.deps.json
 C:\Projects\workshop-docker\compose\Example.Infra.IoC\bin\Debug\netcoreapp3.0\Example.Infra.IoC.dll
 C:\Projects\workshop-docker\compose\Example.Infra.IoC\bin\Debug\netcoreapp3.0\Example.Infra.IoC.pdb
@@ -15,9 +18,6 @@ C:\Projects\workshop-docker\compose\Example.Infra.IoC\bin\Debug\netcoreapp3.0\Ex
 C:\Projects\workshop-docker\compose\Example.Infra.IoC\bin\Debug\netcoreapp3.0\Example.Application.pdb
 C:\Projects\workshop-docker\compose\Example.Infra.IoC\bin\Debug\netcoreapp3.0\Example.Domain.pdb
 C:\Projects\workshop-docker\compose\Example.Infra.IoC\bin\Debug\netcoreapp3.0\Example.Infra.Repository.pdb
-C:\Projects\workshop-docker\compose\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.csprojAssemblyReference.cache
-C:\Projects\workshop-docker\compose\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.AssemblyInfoInputs.cache
-C:\Projects\workshop-docker\compose\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.AssemblyInfo.cs
 C:\Projects\workshop-docker\compose\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.csproj.CopyComplete
 C:\Projects\workshop-docker\compose\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.dll
 C:\Projects\workshop-docker\compose\Example.Infra.IoC\obj\Debug\netcoreapp3.0\Example.Infra.IoC.pdb
