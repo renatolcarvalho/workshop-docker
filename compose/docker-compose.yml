@@ -1,0 +1,21 @@
+version: '3.6'
+
+networks: 
+  dockersql-network:
+    driver: bridge
+
+services:
+  dockersql.application.webapi:
+    image: dockersql.application.webapi
+    build:
+      context: .
+      dockerfile: Example.WebApi/Dockerfile
+    networks:
+      - dockersql-network
+    depends_on:
+      - sql.database
+
+  sql.database:
+    image: microsoft/mssql-server-linux:2017-latest
+    networks:
+      - dockersql-network

@@ -1,0 +1,16 @@
+version: '3.6'
+
+services:
+  dockersql.application.webapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "9091:80"
+  
+  sql.database:
+    environment:
+      - SA_PASSWORD=123Aa321
+      - ACCEPT_EULA=Y
+    ports:
+      - "1401:1433"
+

@@ -1,0 +1,15 @@
+C:\Projects\workshop-docker\Example.Domain\bin\Debug\netcoreapp3.0\Example.Domain.deps.json
+C:\Projects\workshop-docker\Example.Domain\bin\Debug\netcoreapp3.0\Example.Domain.dll
+C:\Projects\workshop-docker\Example.Domain\bin\Debug\netcoreapp3.0\Example.Domain.pdb
+C:\Projects\workshop-docker\Example.Domain\obj\Debug\netcoreapp3.0\Example.Domain.AssemblyInfoInputs.cache
+C:\Projects\workshop-docker\Example.Domain\obj\Debug\netcoreapp3.0\Example.Domain.AssemblyInfo.cs
+C:\Projects\workshop-docker\Example.Domain\obj\Debug\netcoreapp3.0\Example.Domain.dll
+C:\Projects\workshop-docker\Example.Domain\obj\Debug\netcoreapp3.0\Example.Domain.pdb
+C:\Projects\workshop-docker\compose\Example.Domain\bin\Debug\netcoreapp3.0\Example.Domain.deps.json
+C:\Projects\workshop-docker\compose\Example.Domain\bin\Debug\netcoreapp3.0\Example.Domain.dll
+C:\Projects\workshop-docker\compose\Example.Domain\bin\Debug\netcoreapp3.0\Example.Domain.pdb
+C:\Projects\workshop-docker\compose\Example.Domain\obj\Debug\netcoreapp3.0\Example.Domain.AssemblyInfoInputs.cache
+C:\Projects\workshop-docker\compose\Example.Domain\obj\Debug\netcoreapp3.0\Example.Domain.AssemblyInfo.cs
+C:\Projects\workshop-docker\compose\Example.Domain\obj\Debug\netcoreapp3.0\Example.Domain.dll
+C:\Projects\workshop-docker\compose\Example.Domain\obj\Debug\netcoreapp3.0\Example.Domain.pdb
+C:\Projects\workshop-docker\compose\Example.Domain\obj\Debug\netcoreapp3.0\Example.Domain.csprojAssemblyReference.cache
